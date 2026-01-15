@@ -30,17 +30,18 @@ fetch(url)
       tr.appendChild(tdEmail);
       tbody.appendChild(tr);
     }
+  })
+  .catch((error) => console.log(error));
 
-    // VERSION AVEC innerHTML (plus courte)
-    // for (let i = 0; i < data.data.length; i++) {
-    //   let tr = document.createElement("tr");
-    //   tr.innerHTML = `
-    //     <td>${data.data[i].id}</td>
-    //     <td>${data.data[i].username}</td>
-    //     <td>${data.data[i].firstName}</td>
-    //     <td>${data.data[i].lastName}</td>
-    //     <td>${data.data[i].email}</td>
-    //   `;
-    //   tbody.appendChild(tr);
-    // }
-  });
+// VERSION AVEC innerHTML (plus courte)
+// for (let i = 0; i < data.data.length; i++) {
+//   let tr = document.createElement("tr");
+//   tr.innerHTML = `
+//     <td>${data.data[i].id}</td>
+//     <td>${data.data[i].username}</td>
+//     <td>${data.data[i].firstName}</td>
+//     <td>${data.data[i].lastName}</td>
+//     <td>${data.data[i].email}</td>
+//   `;
+//   tbody.appendChild(tr);
+// }
